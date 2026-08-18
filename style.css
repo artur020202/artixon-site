@@ -127,6 +127,8 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 .services{padding:56px 0 10px; border-top:1px solid var(--border);}
 .services-row{display:grid; grid-template-columns:repeat(4,1fr); gap:22px; padding:30px 0;}
 @media (max-width:820px){ .services-row{grid-template-columns:repeat(2,1fr);} }
+.services-row.single{grid-template-columns:1fr; max-width:520px; margin:0 auto; padding:30px 0;}
+.services-row.single .service-item{padding:28px;}
 .service-item{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:20px;}
 .service-item .num{font-family:'IBM Plex Mono',monospace; color:var(--blue); font-size:0.78rem; margin-bottom:10px; display:block;}
 .service-item h3{font-size:1.02rem; font-weight:600; margin-bottom:6px;}
