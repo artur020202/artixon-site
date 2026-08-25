@@ -68,6 +68,12 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 .hire .hire-menu a:hover{background:var(--bg-soft);}
 .hire .hire-menu span.plat{font-family:'IBM Plex Mono',monospace; font-size:0.68rem; color:var(--ink-soft);}
 
+/* Language switch */
+.lang-switch{display:flex; gap:4px; background:var(--card-2); border:1px solid var(--border); border-radius:8px; padding:3px;}
+.lang-btn{background:none; border:none; cursor:pointer; padding:6px 9px; border-radius:6px; font-size:0.78rem; font-family:'IBM Plex Mono',monospace; color:var(--ink-soft); transition:background .15s, color .15s;}
+.lang-btn.active{background:var(--bg-soft); color:var(--ink);}
+.lang-btn:hover{color:var(--ink);}
+
 /* BUTTONS */
 .btn{display:inline-flex; align-items:center; gap:10px; padding:14px 24px; border-radius:10px; font-weight:600; font-size:0.98rem; text-decoration:none; border:1px solid transparent; transition:transform .15s ease, box-shadow .15s ease, background .15s ease;}
 .btn:hover{transform:translateY(-2px);}
@@ -138,6 +144,7 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 .order-link:hover{border-color:var(--blue); color:var(--ink); background:rgba(47,107,255,0.08);}
 .order-link.fiverr:hover{border-color:#1DBF73; background:rgba(29,191,115,0.08);}
 .order-link.upwork:hover{border-color:var(--green,#14A800); border-color:#14A800; background:rgba(20,168,0,0.08);}
+.order-link.kwork:hover{border-color:#FF6E4A; background:rgba(255,110,74,0.08);}
 .deliverables .service-order{margin-top:18px;}
 .view-all-row{text-align:center; margin-top:16px;}
 
