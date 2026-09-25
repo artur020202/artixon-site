@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — Artixon</title>
+<meta name="description" content="Digital products by Artixon — starting with Cashflow Command Center 2.0, an Excel cash-flow system for freelancers and small teams.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-hero{padding:56px 0 10px;}
+  .page-hero h1{font-size:clamp(2rem,4vw,2.8rem); line-height:1.08; max-width:22ch;}
+  .page-hero p{margin-top:18px; font-size:1.03rem; color:var(--ink-soft); max-width:52ch; line-height:1.6;}
+
+  .product-section{padding:34px 0 60px;}
+  .product-card{display:grid; grid-template-columns:1fr 1fr; gap:36px; background:var(--card); border:1px solid var(--border); border-radius:18px; padding:32px; align-items:center;}
+  @media (max-width:820px){ .product-card{grid-template-columns:1fr;} }
+  .product-card img{width:100%; border-radius:12px; display:block; border:1px solid var(--border);}
+  .product-body h2{font-size:1.6rem; font-weight:600; margin-bottom:12px;}
+  .product-body p.desc{color:var(--ink-soft); font-size:0.96rem; line-height:1.6; margin-bottom:20px;}
+  .product-price{font-family:'IBM Plex Mono',monospace; font-size:1.6rem; color:var(--ink); margin-bottom:18px;}
+  .product-price span{font-size:0.85rem; color:var(--ink-soft); font-weight:400; margin-left:6px;}
+  .product-features{list-style:none; padding:0; margin:0 0 26px; display:flex; flex-direction:column; gap:10px;}
+  .product-features li{display:flex; align-items:flex-start; gap:10px; color:var(--ink-soft); font-size:0.92rem; line-height:1.5;}
+  .product-features li::before{content:"✓"; color:var(--blue); font-weight:700; flex-shrink:0;}
+  .product-note{margin-top:16px; font-size:0.8rem; color:var(--ink-soft); font-family:'IBM Plex Mono',monospace;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a class="logo" href="index.html"><span class="logo-mark"></span>Artixon</a>
+    <div class="nav-links">
+      <a href="index.html" data-ru="Главная">Home</a>
+      <a href="services.html" data-ru="Услуги">Services</a>
+      <a href="products.html" class="current" data-ru="Продукты">Products</a>
+      <a href="index.html#work" data-ru="Портфолио">Portfolio</a>
+      <a href="index.html#about" data-ru="Обо мне">About</a>
+      <a href="index.html#contact" data-ru="Контакты">Contact</a>
+    </div>
+    <details class="hire">
+      <summary data-ru="Заказать">Hire me</summary>
+      <div class="hire-menu">
+        <a href="https://www.fiverr.com/s/3AGA1Ba" target="_blank" rel="noopener">Fiverr <span class="plat">→</span></a>
+        <a href="https://www.upwork.com/services/product/design-premium-product-listing-images-for-ecommerce-2088146120919269938?ref=project_share" target="_blank" rel="noopener">Upwork <span class="plat">→</span></a>
+        <a href="https://kwork.com/infographics/54350927/premium-e-commerce-product-listing-image" target="_blank" rel="noopener">Kwork <span class="plat">→</span></a>
+      </div>
+    </details>
+    <div class="lang-switch">
+      <button id="lang-en" class="lang-btn active" type="button" aria-label="English">🇬🇧 EN</button>
+      <button id="lang-ru" class="lang-btn" type="button" aria-label="Русский">🇷🇺 RU</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="label" data-ru="Цифровые продукты">Digital Products</span>
+      <h1 class="impact" style="margin-top:10px;" data-ru="Инструменты, которые я сделал для себя — теперь и для вас.">Tools I built for myself — now for you too.</h1>
+      <p data-ru="Помимо дизайна на заказ, я выпускаю готовые цифровые продукты. Первый — Excel-система для контроля денежного потока.">Alongside client design work, I release ready-made digital products. First up — an Excel system for staying on top of cash flow.</p>
+    </div>
+  </section>
+
+  <section class="product-section">
+    <div class="wrap">
+      <div class="product-card">
+        <img src="https://cdn.lemonsqueezy.com/media/482284/450ceb38-5e16-4148-b92a-939730c738d5.png?fit=contain&format=auto&width=1200" alt="Cashflow Command Center 2.0 — Excel cash flow forecast product cover" loading="lazy">
+        <div class="product-body">
+          <h2 data-ru="Cashflow Command Center 2.0">Cashflow Command Center 2.0</h2>
+          <p class="desc" data-ru="Excel-система для контроля денежного потока — для фрилансеров, консультантов, авторов и небольших команд. Вносите фактические доходы и расходы — и сразу видите, куда движется ваш кэшфлоу.">A premium Excel cash-flow system built for freelancers, consultants, creators and small teams. Log your actual income and expenses, and see exactly where your cash flow is heading.</p>
+          <div class="product-price">$9 <span data-ru="разовая оплата">one-time payment</span></div>
+          <ul class="product-features">
+            <li data-ru="Учёт фактических доходов и расходов в одном файле">Track actual income &amp; expenses in one place</li>
+            <li data-ru="Наглядный прогноз денежного потока на будущие периоды">A clear forecast of where your cash flow is heading</li>
+            <li data-ru="Сделано для фрилансеров, консультантов, авторов и небольших команд">Built for freelancers, consultants, creators and small teams</li>
+            <li data-ru="Работает полностью в Excel — никаких подписок и новых сервисов">Works entirely in Excel — no subscriptions, nothing new to learn</li>
+          </ul>
+          <a class="btn btn-primary" href="https://artixon.lemonsqueezy.com/checkout/buy/0f67962f-a32c-4de4-be67-71b5a675724b" target="_blank" rel="noopener">
+            <span data-ru="Купить за $9">Buy now — $9</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7v8"/></svg>
+          </a>
+          <div class="product-note" data-ru="Безопасная оплата через Lemon Squeezy · мгновенная ссылка на скачивание">Secure checkout via Lemon Squeezy · instant download link</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a class="logo" href="index.html" style="margin-bottom:12px; display:inline-flex;"><span class="logo-mark"></span>Artixon</a>
+        <p style="color:var(--ink-soft); font-size:0.88rem; line-height:1.6; max-width:32ch;" data-ru="Дизайн для e-commerce — карточки и инфографика для маркетплейсов, которые понятно объясняют и продают.">E-commerce product design — marketplace cards and infographics that inform and sell.</p>
+      </div>
+      <div class="footer-col work">
+        <h5 data-ru="Работа со мной">Work with me</h5>
+        <ul>
+          <li><a href="https://www.fiverr.com/s/3AGA1Ba" target="_blank" rel="noopener">Fiverr</a></li>
+          <li><a href="https://www.upwork.com/services/product/design-premium-product-listing-images-for-ecommerce-2088146120919269938?ref=project_share" target="_blank" rel="noopener">Upwork</a></li>
+          <li><a href="https://kwork.com/infographics/54350927/premium-e-commerce-product-listing-image" target="_blank" rel="noopener">Kwork</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-ru="Портфолио">Portfolio</h5>
+        <ul>
+          <li><a href="https://www.behance.net/Artiixon" target="_blank" rel="noopener">Behance</a></li>
+          <li><a href="https://www.youtube.com/@Designer_Pro-n1q" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-ru="Соцсети">Social</h5>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/artur-po-844151335/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.tiktok.com/@artur.designer3?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://www.pinterest.com/arturfrilance02/" target="_blank" rel="noopener">Pinterest</a></li>
+          <li><a href="https://x.com/Artixon0202" target="_blank" rel="noopener">X</a></li>
+          <li><a href="https://www.reddit.com/user/Artixon02/" target="_blank" rel="noopener">Reddit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="copyright">© 2026 Artixon. All rights reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="index.html" data-ru="Главная">Home</a>
+        <a href="privacy.html" data-ru="Политика конфиденциальности">Privacy Policy</a>
+        <a href="mailto:arturo-portugalyano@mail.ru" data-ru="Почта">Email</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  function setLang(lang){
+    document.querySelectorAll('[data-ru]').forEach(function(el){
+      if(!el.dataset.en) el.dataset.en = el.innerHTML;
+      el.innerHTML = lang === 'ru' ? el.dataset.ru : el.dataset.en;
+    });
+    document.documentElement.lang = lang;
+    document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    document.getElementById('lang-ru').classList.toggle('active', lang === 'ru');
+    try{ localStorage.setItem('artixon-lang', lang); }catch(e){}
+  }
+  document.getElementById('lang-en').addEventListener('click', function(){ setLang('en'); });
+  document.getElementById('lang-ru').addEventListener('click', function(){ setLang('ru'); });
+  var saved = null;
+  try{ saved = localStorage.getItem('artixon-lang'); }catch(e){}
+  if(saved === 'ru'){ setLang('ru'); }
+})();
+</script>
+
+</body>
+</html>
